@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>快速登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript"  src="js/resetFontsize.js"></script>
+    <script type="text/javascript"  src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript"  src="js/common.js"></script>
+    <script type="text/javascript"  src="js/fast-login.js"></script>
+    <link href="css/common.css"  rel="stylesheet"/>
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+</head>
+<body>
+  <div class="login-module">
+     <i class="login-img"><img src="images/defaule.jpg" alt="华麦律师"></i>
+     <!-- 普通登录 -->
+     <div class="login-main" id="login-module1"> 
+          <div class="user">
+            <label class="icon user-icon"></label>
+            <input type="text" placeholder="手机号" class ="username"/>
+          </div>
+          <div class="psd">
+            <label class="icon psd-icon"></label>
+            <input type="passward" placeholder="密码" class ="passward"/>
+            <a href="javascript:void(0)" class="forget-psd">忘记密码</a>
+          </div>
+           <div class="login">
+             <a href="javascript:void(0)" class="login-btn" onclick="Login(1)">登录</a>
+          </div>
+          <div class="other">
+            <a href="register.html" class="register">注册</a>
+            <a href="javascript:void(0)" class="fast-login">快速登录</a>
+          </div>
+     </div>
+     <!-- 快速登录 -->
+      <div class="login-main active" id="login-module2"> 
+          <div class="user">
+            <label class="icon user-icon"></label>
+            <input type="text" placeholder="手机号1" class ="iphone"/>
+          </div>
+          <div class="code">
+             <label class="icon icon-code"></label>
+              <input type="text" placeholder="验证码" class="code-num"/>
+              <a href="javascript:void(0)" class="send-code" onclick="Sendcode(this)">获取验证码</a>
+           </div>
+           <div class="login">
+             <a href="javascript:void(0)" class="login-btn"  onclick="Login(2)">登录</a>
+          </div>
+          <div class="other">
+            <a href="register.html" class="register">注册</a>
+            <a href="javascript:void(0)" class="fast-login">普通登录</a>
+          </div>
+     </div>
+  </div> 
+</body>
+
+

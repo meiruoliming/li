@@ -1,0 +1,75 @@
+a {font-size:14px!important;}
+h4{font-size:16px!important;
+	text-align:center;
+	margin:.8rem 0 .4rem;
+    margin-bottom:;}
+.register-module{width:100%;height:100%;position:fixed;margin:auto;
+	top:0;left:0;right:0;bottom:0;background:aliceblue;}
+.register-main{overflow:hidden;
+	width:86%;
+	margin:0 auto;}
+.icon{width:.6rem;
+	height:.6rem;line-height:.56rem;
+	margin-right:.1rem;
+    position:absolute;left:0;
+    margin:.1rem;
+}	
+.icon-user{background:url("../images/name_grey.png") no-repeat -4px -5px;background-size:.8rem .8rem;}
+.icon-psd{background:url("../images/password_grey.png") no-repeat -4px -5px;background-size:.8rem .8rem;}
+.icon-repsd{background:url("../images/password_grey.png") no-repeat -4px -5px;background-size:.8rem .8rem;}
+.icon-phone{background:url("../images/number_grey.png") no-repeat -4px -5px;background-size:.8rem .8rem;}
+.icon-code{background:url("../images/verifycode_grey.png") no-repeat -4px -5px;background-size:.8rem .8rem;}
+.user,.psd,.repsd,.phone,.code{
+	border-bottom:1px solid #00a0ea;
+	overflow:hidden;
+	position:relative;
+	padding-bottom:.1rem;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; 
+    padding-left:.8rem;
+    margin-top:.5rem;
+}
+.user{margin-top:0;}
+.register-main input{border:none;
+	background:none;
+	width:4rem;
+    height:.8rem;
+    float:left;
+}
+
+.send-code{
+	height:.5rem;line-height:.5rem;
+	text-align:center;
+	padding:0.1rem .25rem;
+	border:1px solid #ccc;
+	display:inline-block;
+	position:absolute;
+	right:0;bottom:.05rem;
+	border-radius:25px;
+	color:#898888;
+	margin-bottom:.15rem;
+}
+.agreement {overflow:hidden;margin-top:.4rem;}
+.agreement span{font-size:14px!important;
+	float:left;
+	color:#898888;
+}
+.agreement input[type='checkbox']{width:.4rem;
+	height:.4rem;
+	float:left;}
+.agreement a{color:red;}	
+.register-btn{
+	height:.9rem;
+	margin:.2rem auto 0;
+	text-align:center;
+    line-height: .9rem;
+    background:#00a0ea;color:white;
+    display:block;
+    border-radius:5px;}
+.other{overflow:hidden;}
+.other>a{color:#00a0ea;
+	margin-top:.6rem;
+    display:block;}
+.login{float:left;}
+.fast-login{float:right;}

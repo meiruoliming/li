@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript"  src="js/resetFontsize.js"></script>
+    <script type="text/javascript"  src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript"  src="js/common.js"></script>
+    <link href="css/base.css"  rel="stylesheet"/>
+    <link href="css/common.css"  rel="stylesheet"/>
+    <link href="css/register.css" rel="stylesheet">
+</head>
+<body>
+  <div class="register-module">
+     <h4>用户注册</h4>
+     <div class="register-main"> 
+     	 <div class="user">
+     	 	<label class="icon icon-user"></label>
+            <input type="text" placeholder="请输入您的用户名" class ="username"/>
+          </div>
+          <div class="psd">
+           <label class="icon icon-psd"></label>
+            <input type="password" placeholder="请输入不少于6位数的密码" class ="password"/>
+        </div>
+        <div class="repsd">
+            <label class="icon icon-repsd"></label>
+            <input type="password" placeholder="请再次输入密码" class ="re-psd"/>
+        </div>
+          <div class="phone">
+            <label class="icon icon-phone"></label>
+            <input type="number" placeholder="请输入您的手机号" class ="number"/>
+        </div>
+           <div class="code">
+             <label class="icon icon-code"></label>
+              <input type="text" placeholder="验证码" class="code-num"/>
+              <a href="javascript:void(0)" class="send-code" onclick="Sendcode(this)">获取验证码</a>
+           </div>
+           <div class="agreement">
+              <input type="checkbox" class="agree" checked="true">
+              <span>我已阅读并已经同意<a href="">《用户协议》</a></span>
+           </div>
+           <div class="register">
+              <a href="javascript:void(0)" class="register-btn" >注册</a>
+           </div>
+          <div class="other">
+            <a href="login.html" class="login">已有账户，立即登录</a>
+            <a href="javascript:void(0)" class="fast-login">快速登录</a>
+          </div>
+     </div>
+  </div> 
+</body>
+
+<script>
+    $(document).ready(function(){
+        $(".register-btn").click(function(){
+           var reg = /^1(3|4|5|7|8)\d{9}$/;
+            var username=$(".username").val();
+            var psd=$(".password").val();
+            var repsd=$(".re-psd").val();
+            var phone=$(".number").val();
+            var code=$(".code-num").val();
+             if(username===""){
+             message("用户名不能为空!");
+             return;
+             }else if(psd===""){
+              message("密码不能为空！");
+             return;
+            }else if(psd.length<6){
+             message("密码长度不能小于6！");
+             $(".password").val("");
+            return;
+           }else if(repsd!=psd){
+             message("两次输入密码不一致！");
+            $(".re-psd").val("");
+             return;
+            }else if(phone===""){
+            message("手机号不能为空！");
+            return;
+            }else if (!reg.test(phone)){
+             message("手机号格式不正确!");
+             $(".number").val("");
+             return;
+           }else if(code===""){
+             message("验证码不能为空！");
+            }else {
+           
+            $(".send-code").html( "获取验证码！");
+            clearInterval(t);
+            return;
+           };
+
+            $.ajax({
+                type:"POST",
+                url:"",
+//                 参数 "serivice.php?number="+$(".username").val()+$(".passward").val();
+                dataType:"json",
+                data:{
+                    username:username,
+                    psd:psd,
+                    repsd:repsd,
+                    phone:phone
+                },
+                success:function(data){
+                    if(data.success){
+                        messages("登录成功！");
+                        $("p").html(data.msg);
+                    }else{
+                        $("p").html("出现错误:"+data.msg);
+                    }
+
+                },
+                error:function(){
+//                    messages("")
+                }
+            })
+        })
+    })
+</script>

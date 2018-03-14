@@ -1,0 +1,112 @@
+body{overflow:hidden;background:#f1f1f1;}
+.container{overflow:hidden;
+
+}
+.user-msg{
+	overflow:hidden;
+	background:url("../images/user_center_bg .jpg") no-repeat;
+}
+.user-top{overflow:hidden;
+    margin-top:.6rem;
+    padding-bottom:.4rem;
+}
+.user-icon{float:left;
+    overflow:hidden;
+    margin-left:.4rem;
+    width:1.4rem;
+    height:1.4rem;
+}
+.user-icon>img{width:100%;
+   border-radius:50%;
+   display:inline-block;
+   }
+.user-name{display:inline-block;
+   
+   }
+
+.area{float:right;
+     overflow:hidden;
+     margin-right:.4rem;
+     text-align: center;
+     margin-top:.4rem;
+}
+.area>a{
+	overflow:hidden;
+     width:.8rem;
+     height:.8rem;
+     display:inline-block;
+}
+.area>a>img{
+	width:.4rem;
+	height:.4rem;
+	margin:0 auto;
+	display:block;
+}
+.user-area{color:white;
+   width:.8rem;
+   line-height:.4rem;
+   text-align: center;
+   height: .4rem;
+   display:block;
+  }
+.user-bottom{
+	overflow:hidden;
+}
+.bottom-list{
+	overflow:hidden;
+	padding:.2rem 0;
+}
+.bottom-list>li{
+	width:33%;
+	display:inline-block;
+	float:left;
+	text-align: center;
+   border-left:1px solid white;
+}
+.bottom-list>li:first-child{border-left:none;}
+.bottom-list>li a{
+	color:white;
+}
+.money,.focus,.fans{display: inline-block;
+    margin-right:.1rem;
+}
+
+.main{overflow:hidden;
+}
+.function{overflow:hidden;}
+.function-list{
+	overflow:hidden;
+	padding:0 .3rem;
+    background:white;
+}
+.list{width:100%;
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom:1px solid #f1f1f1;
+}
+.left-icon{width:.4rem;
+    height:.4rem;
+    margin:.2rem .1rem  .2rem 0;
+    display:inline-block;
+    vertical-align:middle;
+}
+.list>a>span{height:1rem;
+	line-height: 1rem;
+	display:inline-block;
+}
+.colorp{float:right;
+   color:red;
+   margin-right:.1rem;
+ }
+.right-icon{float:right;
+	width:.2rem;
+	height:.2rem;
+    display:inline-block;
+    margin-top:.4rem;
+}
+.setting{overflow:hidden;
+    margin-top:.2rem;
+    height:1rem;
+    line-height:1rem;
+    background:white;
+}
