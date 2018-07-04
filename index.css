@@ -1,0 +1,276 @@
+.top{width:100%;
+    height:60px;
+    text-align:center;
+    background:white;}
+.top>img{height:60px;}
+/*导航*/
+.nav{width:100%;
+     height:50px;
+     line-height:50px;
+     background:black;
+}
+.nav-list{overflow:hidden;
+    display:block;
+    text-align:left;
+    margin-bottom:0;
+}
+.nav-info{overflow:hidden;
+    width:auto;
+    margin-right:50px;
+}
+.nav-info>a{color:white;}
+.nav-info>a:hover{text-decoration: none;}
+/*热点珠宝*/
+.jewelry{overflow:hidden;
+    width:100%;
+    height:auto;
+    background:url("../images/jewelry_03.png") no-repeat;
+    background-size:100% 100%;
+    margin-top:50px;
+    display:table;
+}
+.jewelry-list{overflow:hidden;
+    width:50%;
+    display:table-cell;
+    vertical-align:middle;
+    padding:30px 0;
+    transform:translateX(45%);
+}
+.jewelry-info{overflow:hidden;
+    padding: 5px;
+}
+.jewelry-info>a>img,.earring-info>a>img,.necklace-info>a>img,.chain-necklace-info>a>img,.necklace-left>a>img{max-width:100%;
+    width:100%;
+    vertical-align:middle;}
+.jewelry-info>a>span{width:100%;
+    position:absolute;
+    bottom:5px;
+    left:0;
+    display:inline-block;
+    padding: 20px 10px;
+    font-size:16px;
+}
+.jewelry-info>a>span,.earring-info>a>span{width:100%;
+    display:inline-block;
+    padding:10px 20px;
+    font-size:16px;
+}
+.add-car{width:-webkit-calc(100% - 10px);
+    width:-moz-calc(100% - 10px);
+    width:calc(100% - 10px);
+    height:50px;
+    background: #928ba0;;
+    color:white;
+    text-align:center;
+    line-height:50px;
+    position:absolute;
+    bottom:-60px;
+    left:5px;
+    padding:0 5px;
+    transition:all .6s;
+    -webkit-transition:all .6s;
+    -moz-transition:all .6s;
+}
+.necklace-left>a>.add-car{padding:0!important;left:0!important;
+    width:-webkit-calc(100% - 2px)!important;
+    width:-moz-calc(100% - 2px)!important;
+    width:calc(100% - 2px)!important;
+}
+.chain,.necklace{height:auto;
+    overflow:hidden;
+    margin-top:50px;
+    /*background:pink;*/
+}
+.add-car:hover{text-decoration:none;}
+.jewelry-info:hover .add-car{
+    transform:translateY(-55px);
+    -webkit-transform:translateY(-55px);
+    -ms-transform:translateY(-55px);
+}
+.chain-necklace-info:hover .add-car,.necklace-info:hover .add-car{
+    transform:translateY(-55px);
+    -webkit-transform:translateY(-55px);
+    -ms-transform:translateY(-55px);
+}
+.jewelry-info:hover .jewelry-info>a>span{bottom:60px;position:absolute;left:0;}
+.chain-necklace{overflow:hidden;
+    margin-top:30px;}
+#banner .arrow-left{
+    background: url(../images/banner_arrow_01.png) no-repeat left top;
+    position: absolute;
+    left: 20px;
+    top: 55%;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+}
+#banner{overflow:hidden;
+   position:relative;
+}
+#banner .arrow-right{
+    background: url(../images/banner_arrow_01.png) no-repeat left bottom;
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    margin-top: -35px;
+    width: 70px;
+    height: 70px;
+    z-index: 999;
+}
+.chain>img,.necklace>img{display:block;
+    text-align:center;
+    margin:0 auto;
+}
+/*chain-项链*/
+.necklace-content,.necklace-content{overflow:hidden;
+   margin-top:30px;
+}
+.necklace-list{overflow:hidden;
+    width:100%;
+    height:auto;
+}
+.necklace-info,.chain-necklace-info{padding:5px;
+    position:relative;
+    overflow:hidden;
+}
+.necklace-detial,.chain-necklace-detial{position:absolute;
+    bottom:5px;
+    left:5px;
+    text-align:left;
+    font-size:16px;
+    padding:10px 10px 10px 20px;
+    display:inline-block;
+}
+/*chain-耳环*/
+/*.earring{overflow:hidden;}*/
+.earring-list{
+    overflow:auto;
+    width:100%;
+    height:auto;
+    background:#cccccc40;
+    padding-left:30px;
+    padding-right:30px;
+    margin:50px auto;
+}
+.earring-info{
+    padding:40px 5px;
+    position:relative;
+    cursor:pointer;
+    /*border:1px solid #cccccc4;*/
+}
+/*.earring-info:hover{border:1px solid #ccc;}*/
+.earring-info>a{display:block;}
+.earring-info>a>img{width:100%;
+    overflow:hidden;
+    height:auto;
+    max-width:100%;
+    transition: all 0.6s;
+   -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    top:0;
+    left:0;
+}
+/*正常放大*/
+/*.earring-info{overflow:hidden;}*/
+.earring-info>a>img:hover{
+    top:0px;
+    position:absolute;
+    /*正常效果*/
+    /*transform:translateY(-50%);*/
+    transform:scale(1.3);
+    -moz-transform:scale(1.3);
+    -webkit-transform:scale(1.3);
+    z-index:1000;
+}
+/*项链*/
+.necklace-left{overflow:hidden;float:left;
+    padding:5px 0;
+    height:auto;
+}
+.necklace-left,.chain-necklace-info{position:relative;}
+.necklace-right{overflow:hidden;
+    margin:0 auto;
+}
+.necklace-left:hover .add-car{transform:translateY(-50px);
+    -webkit-transform:translateY(-50px);
+    -ms-transform:translateY(-50px);}
+.necklace-right>.row{margin:0;}
+ /*footer*/
+.footer{width:100%;
+     height:auto;
+     background:black;
+     padding-top:30px;
+    margin-top:50px;
+}
+.foot-introduce{overflow:hidden;
+   text-align:center;
+}
+.foot-introduce>dd{color:white;}
+.foot-introduce>a>img{width:100px;height:auto;}
+.us{overflow:hidden;
+    width:100%;
+    height:auto;
+    padding:30px 0;
+    background:#2c2c2c;
+    text-align:center;}
+.us-content>p{color:white;}
+#banner{position:relative;}
+#bannerpagination{display:none;}
+#banner .swiper-pagination-bullet{margin:0 3px;}
+#banner .pagination {
+    position: absolute;
+    left: 0;
+    text-align: center;
+    bottom: -10px;
+    width: 100%;
+    z-index: 999;}
+#banner .swiper-pagination-bullet-active {
+    background: #fdd000;
+    width: 15px;
+    border-radius:5px;
+    padding:3px 0;
+}
+@media screen and (max-width:1024px){.us{padding:30px 15px;}
+   .necklace-left{display:none}
+}
+@media screen and (min-width:990px) and (max-width:1200px){.necklace-left>a>img{width:305px;}}
+@media screen and (max-width:990px){.jewelry-info>a>span, .earring-info>a>span{font-size:14px;}
+    .chain, .necklace{margin-top:10px;}
+}
+@media screen and (max-width:768px){.chain{margin-top:30px;}
+   .necklace-list{overflow:hidden;display:block;margin:0 auto;}
+    .jewelry{background:white;
+        display:block;
+        margin:0 auto;
+    }
+    .jewelry-list{width:100%;
+        transform:translateX(0%);
+        padding:15px 0;
+    }
+    .chain-necklace{margin-top:20px}
+    .footer{margin-top:30px;}
+}
+@media screen and (max-width:540px){.foot-introduce>a>img{width:60px;height:auto;}
+    .us{padding: 15px;}
+    #banner .arrow-left,#banner .arrow-right{width:30px;height:30px;
+       background-size:100% 100%;
+    }
+    .footer{margin-top:20px;}
+    .jewelry-info{width:100%;}
+    .necklace-info,.chain-necklace-info,.earring-info,.jewelry-info{display:block;
+       margin:15px auto;
+       width:100%;padding:0;
+    }
+    .chain-necklace{margin:15px 15px 0 15px;}
+    .necklace-info{padding:0 20px;}
+    .jewelry-list{padding:15px;}
+    .earring-lis{padding-top:15px;}
+    /*hover效果*/
+    .earring-list{margin-top:20px;}
+    .top>img,.top{height:45px;}
+    .arrow-left,.arrow-right{display:none}
+    #bannerpagination{display:block;}
+    .nav-info{margin-right:20px;}
+    .nav-info:nth-child(3){margin-right:0}
+}
